@@ -4,9 +4,9 @@ canvas.fillStyle = "red";
 canvas.fillRect(80, 150, 100, 100);
 
 canvas.beginPath();
-canvas.moveTo(70,50);
-canvas.lineTo(100,75);
-canvas.lineTo(100,25);
+canvas.moveTo(160,80);
+canvas.lineTo(80,40);
+canvas.lineTo(80,80);
 canvas.fill();
 
 var x;
