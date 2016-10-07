@@ -1,31 +1,32 @@
 var canvasDiv = document.getElementById("drawingArea");
 var canvas = canvasDiv.getContext('2d');
 canvas.fillStyle = "red";//wagon
-canvas.fillRect(450, 520, 400, 100);
-canvas.fillRect(200, 450, 100, 100);//sign-x,y,w,h
+canvas.fillRect(350, 520, 400, 100);
+canvas.fillRect(100, 450, 100, 100);//sign-x,y,w,h
 canvas.fillStyle = "white";
-canvas.fillRect(300, 610, 125, 50);//smaller wagon
+canvas.fillRect(200, 610, 125, 50);//smaller wagon
 canvas.fillStyle = "black";
-canvas.fillRect(245, 650, 10, 100);//2nd square after sign
-canvas.fillRect(245, 550, 10, 100);//1st square after sign
+canvas.fillRect(145, 650, 10, 100);//2nd square after sign
+canvas.fillRect(145, 550, 10, 100);//1st square after sign
 canvas.fillStyle = "brown";
-canvas.fillRect(100, 700, 1000, 100);//ground
+canvas.fillRect(0, 700, 1000, 100);//ground
 canvas.fillStyle = "chocolate";
 canvas.fillRect(445, 350, 10, 100);//tree stump
 canvas.fillRect(645, 340, 10, 100);
+canvas.fillRect(245, 340, 10, 100);
 canvas.fillStyle = "black";
 
-canvas.beginPath();//arrow thing-back
-canvas.moveTo(200,300);
-canvas.lineTo(300,240);
-canvas.lineTo(300,280);
-canvas.fill();
-
-canvas.beginPath();//arrow-triangle
-canvas.moveTo(200,280);
-canvas.lineTo(280,240);
-canvas.lineTo(280,280);
-canvas.fill();
+// canvas.beginPath();//arrow thing-back
+// canvas.moveTo(200,300);
+// canvas.lineTo(300,240);
+// canvas.lineTo(300,280);
+// canvas.fill();
+//
+// canvas.beginPath();//arrow-triangle
+// canvas.moveTo(200,280);
+// canvas.lineTo(280,240);
+// canvas.lineTo(280,280);
+// canvas.fill();
 
 canvas.fillStyle = "green";
 canvas.beginPath();//tree
@@ -40,6 +41,12 @@ canvas.lineTo(645,120);//top
 canvas.lineTo(570,340);//left
 canvas.fill();
 
+canvas.beginPath();//tree 3
+canvas.moveTo(330,340);//right
+canvas.lineTo(245,120);//top
+canvas.lineTo(170,340);//left
+canvas.fill();
+
 var x;
 var y;
 var radius;
@@ -49,41 +56,41 @@ canvas.arc(x, y, radius, startAngle, endAngle)
 
 canvas.fillStyle = "black";
 canvas.beginPath();//wheels 1
-canvas.arc(500, 655, 25, 0, 2*Math.PI);//smaller
+canvas.arc(400, 655, 25, 0, 2*Math.PI);//smaller
 canvas.stroke();
 canvas.fill();
 
 canvas.beginPath();
-canvas.arc(700, 655, 25, 0, 2*Math.PI);
+canvas.arc(600, 655, 25, 0, 2*Math.PI);
 canvas.stroke();
 canvas.fill();
 
 
 canvas.beginPath();
-canvas.arc(700, 655, 50, 0, 2*Math.PI);//larger
+canvas.arc(600, 655, 50, 0, 2*Math.PI);//larger
 canvas.stroke();
 
 canvas.beginPath();
-canvas.arc(500, 655, 50, 0, 2*Math.PI);
+canvas.arc(400, 655, 50, 0, 2*Math.PI);
 canvas.stroke();
 
 canvas.beginPath();//wheels 2
-canvas.arc(325, 680, 12, 0, 2*Math.PI);//smaller
+canvas.arc(225, 680, 12, 0, 2*Math.PI);//smaller
 canvas.stroke();
 canvas.fill();
 
 canvas.beginPath();
-canvas.arc(400, 680, 12, 0, 2*Math.PI);
+canvas.arc(300, 680, 12, 0, 2*Math.PI);
 canvas.stroke();
 canvas.fill();
 
 
 canvas.beginPath();
-canvas.arc(400, 680, 24, 0, 2*Math.PI);//larger
+canvas.arc(300, 680, 24, 0, 2*Math.PI);//larger
 canvas.stroke();
 
 canvas.beginPath();
-canvas.arc(325, 680, 24, 0, 2*Math.PI);
+canvas.arc(225, 680, 24, 0, 2*Math.PI);
 canvas.stroke();
 
 canvas.fillStyle = "yellow";
