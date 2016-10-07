@@ -14,19 +14,6 @@ canvas.fillStyle = "chocolate";
 canvas.fillRect(445, 350, 10, 100);//tree stump
 canvas.fillRect(645, 340, 10, 100);
 canvas.fillRect(245, 340, 10, 100);
-canvas.fillStyle = "black";
-
-// canvas.beginPath();//arrow thing-back
-// canvas.moveTo(200,300);
-// canvas.lineTo(300,240);
-// canvas.lineTo(300,280);
-// canvas.fill();
-//
-// canvas.beginPath();//arrow-triangle
-// canvas.moveTo(200,280);
-// canvas.lineTo(280,240);
-// canvas.lineTo(280,280);
-// canvas.fill();
 
 canvas.fillStyle = "green";
 canvas.beginPath();//tree
